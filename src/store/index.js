@@ -5,11 +5,11 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 // импорт модуля
-import example from './example'
+import shop from './shop'
 
 // обращаемся к Vuex.Store
 export default new Vuex.Store({
   modules: {
-    example
+    shop
   }
 })

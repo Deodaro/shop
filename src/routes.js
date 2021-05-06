@@ -7,7 +7,8 @@ Vue.use(Router)
 // Pages
 import Home from '@/pages/Home'
 import NotFound from '@/pages/404'
-import Example from '@/pages/Example'
+import Shop from '@/pages/Shop'
+import Product from '@/pages/Product'
 
 // Routering
 export default new Router({
@@ -24,9 +25,14 @@ export default new Router({
       component: NotFound
     },
     {
-      path: '/example',
-      name: 'example',
-      component: Example
+      path: '/shop/:id',
+      name: 'product',
+      component: Product
+    },
+    {
+      path: '/shop',
+      name: 'shop',
+      component: Shop
     }
   ]
 })
